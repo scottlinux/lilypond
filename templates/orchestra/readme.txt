@@ -6,7 +6,7 @@ orchestra_definitions.ly - work in progress various variables
 
 orchestra_score.ly - the main score file to engrave a full score
 
-<instrument>.ly - indivdual parts
+<instrument>.ly - individual parts
 
 
 
