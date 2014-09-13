@@ -4,7 +4,7 @@ stringquartet_metrics.ly - tempo indications, meter changes, and other similar g
 
 stringquartet_score.ly - the main score file to engrave a full score
 
-stringquartet_<instrument>.ly - indivdual parts
+stringquartet_<instrument>.ly - individual parts
 
 
 
