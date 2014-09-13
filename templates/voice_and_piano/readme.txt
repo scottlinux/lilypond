@@ -1,18 +1,18 @@
-stringquartet_notes.ly - all notes go here
+songs_notes.ly - all notes go here
 
-stringquartet_metrics.ly - tempo indications, meter changes, and other similar global stuff
+songs_metrics.ly - tempo indications, meter changes, and other similar global stuff
 
-stringquartet_score.ly - the main score file to engrave a full score
+songs_score.ly - the main score file to engrave a full score
 
-stringquartet_<instrument>.ly - indivdual parts
+songs_pno.ly - individual piano part
 
 
 
 Engrave main score: 
 
-$ lilypond stringquartet_score.ly
+$ lilypond songs_score.ly
 
-Engrave individual parts like so:
+Engrave individual piano part like so:
 
-$ lilypond stringquartet_vln1.ly
+$ lilypond songs_pno.ly
 
