@@ -40,6 +40,7 @@
         \new Voice = "soprano"
         {
           \set Staff.instrumentName = \markup \concat {"Soprano" " "}
+          \set Staff.midiInstrument = "choir aahs"
           << \MetricsI \SopranoNotesI >>
         }
         \new Lyrics \lyricsto "soprano" \sopranotextI
@@ -48,6 +49,7 @@
         {
           \set PianoStaff.instrumentName = "Piano "
           \set PianoStaff.shortInstrumentName = " "
+          \set PianoStaff.midiInstrument = #"acoustic grand"
           <<
             \new Staff
             {
@@ -90,6 +92,7 @@
         \new Voice = "soprano"
         {
           \set Staff.instrumentName = \markup \concat {"Soprano" " "}
+          \set Staff.midiInstrument = "choir aahs"
           << \MetricsII \SopranoNotesII >>
         }
         \new Lyrics \lyricsto "soprano" \sopranotextII
@@ -98,6 +101,7 @@
         {
           \set PianoStaff.instrumentName = "Piano "
           \set PianoStaff.shortInstrumentName = " "
+          \set PianoStaff.midiInstrument = #"acoustic grand"
           <<
             \new Staff
             {
@@ -139,6 +143,7 @@
         \new Voice = "soprano"
         {
           \set Staff.instrumentName = \markup \concat {"Soprano" " "}
+          \set Staff.midiInstrument = "choir aahs"
           << \MetricsIII \SopranoNotesIII >>
         }
         \new Lyrics \lyricsto "soprano" \sopranotextIII
@@ -146,6 +151,7 @@
         {
           \set PianoStaff.instrumentName = "Piano "
           \set PianoStaff.shortInstrumentName = " "
+          \set PianoStaff.midiInstrument = #"acoustic grand"
           <<
             \new Staff
             {
