@@ -4,6 +4,7 @@ SopranoNotesI = {
   \clef treble
   \relative c''{
     \oneVoice \dynamicUp
+    c1 | %1
   }
 }
 
@@ -25,6 +26,7 @@ SopranoNotesIII = {
 PianoaNotesI = {
   \clef treble
   \relative c'{
+  c1 | %1  
 
   }
 }
@@ -35,12 +37,14 @@ PianobNotesI = {
     \new Voice {
       \relative c'{
         \voiceOne
+          c1 | %1
       }
     }
     \new Voice {
       \voiceTwo
       \relative c'{
         \voiceTwo
+          a1 | %1
 
       }
     }
