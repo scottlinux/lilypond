@@ -141,6 +141,7 @@
       << \Metrics \TimpaniHeading \TimpaniNotes >>
       \new DrumStaff = "percussion" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        \override TimeSignature.style = #'numbered
       }
       << \Metrics \PercussionHeading \PercussionNotes >>
       \new Staff = "glockenspiel" \with {
