@@ -32,8 +32,9 @@ PercussionHeading = {
     \override Score.Stem #'stemlet-length = #0.75
     \override Score.StaffSymbol.layer = #4
     \override Score.TimeSignature.layer = #3
-    \new Staff = "percussion" \with {
+    \new DrumStaff = "percussion" \with {
       \override VerticalAxisGroup #'remove-empty = ##f
+      \override TimeSignature.style = #'numbered
     }
     << \Metrics \PercussionHeading \PercussionNotes >>
   >>
