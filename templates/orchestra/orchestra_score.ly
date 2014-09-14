@@ -30,6 +30,7 @@
     \new StaffGroup <<
       \new Staff = "flute" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"flute"
       }
       <<
         { \voiceOne << \Metrics \FlutesHeading \FluteOneNotes >> }
@@ -37,6 +38,7 @@
       >>
       \new Staff = "oboe" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"oboe"
       }
       <<
         { \voiceOne << \Metrics \OboesHeading \OboeOneNotes >> }
@@ -44,6 +46,7 @@
       >>
       \new Staff = "clarinet" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"clarinet"
       }
       <<
         {
@@ -63,6 +66,7 @@
       >>
       \new Staff = "bassoon" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"bassoon"
       }
       <<
         { \voiceOne << \Metrics \BassoonsHeading \BassoonOneNotes >> }
@@ -72,6 +76,7 @@
     \new StaffGroup <<
       \new Staff = "horn" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"trumpet"
       }
       <<
         {
@@ -91,6 +96,7 @@
       >>
       \new Staff = "trumpet" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"trumpet"
       }
       <<
         {
@@ -110,6 +116,7 @@
       >>
       \new Staff = "trombone" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"trombone"
       }
       <<
         { \voiceOne << \Metrics \TrombonesHeading \TromboneOneNotes >> }
@@ -117,16 +124,19 @@
       >>
       \new Staff = "bass trombone" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"trombone"
       }
       << \Metrics \BassTromboneHeading \TromboneThreeNotes >>
       \new Staff = "tuba" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"tuba"
       }
       << \Metrics \TubaHeading \TubaNotes >>
     >>
     \new StaffGroup <<
       \new Staff = "timpani" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"timpani"
       }
       << \Metrics \TimpaniHeading \TimpaniNotes >>
       \new DrumStaff = "percussion" \with {
@@ -135,14 +145,15 @@
       << \Metrics \PercussionHeading \PercussionNotes >>
       \new Staff = "glockenspiel" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"glockenspiel"
       }
       << \Metrics \GlockenspielHeading \GlockenspielNotes >>
     >>
     \new PianoStaff <<
       \PianoHeading
-      \new Staff = "PianoRH" \with { \override VerticalAxisGroup #'remove-empty = ##f } << \Metrics \PianoRHNotes  >>
+      \new Staff = "PianoRH" \with { \override VerticalAxisGroup #'remove-empty = ##f midiInstrument = #"acoustic grand" } << \Metrics \PianoRHNotes  >>
       %\new Dynamics = "piano dynamics" { \PianoCenteredDynamics \PianoDynamics }
-      \new Staff = "PianoLH" \with { \override VerticalAxisGroup #'remove-empty = ##f } <<  \Metrics \PianoLHNotes >>
+      \new Staff = "PianoLH" \with { \override VerticalAxisGroup #'remove-empty = ##f midiInstrument = #"acoustic grand" } <<  \Metrics \PianoLHNotes >>
     >>
     \new StaffGroup \with {
       \override StaffGrouper #'staff-staff-spacing #'stretchability = #3.5
@@ -154,23 +165,28 @@
       \new GrandStaff = "violins" <<
         \new Staff = "violin I" \with {
           \override VerticalAxisGroup #'remove-empty = ##f
+          midiInstrument = #"violin"
         }
         << \Metrics \ViolinOneHeading  \ViolinOneNotes >>
         \new Staff = "violin II" \with {
           \override VerticalAxisGroup #'remove-empty = ##f
+          midiInstrument = #"violin"
         }
         << \Metrics \ViolinTwoHeading \ViolinTwoNotes >>
       >>
       \new Staff = "viola" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"viola"
       }
       << \Metrics \ViolaHeading \ViolaNotes >>
       \new Staff = "cello" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"cello"
       }
       << \Metrics \VioloncelloHeading \CelloNotes >>
       \new Staff = "double bass" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
+        midiInstrument = #"contrabass"
       }
       << \Metrics \DoubleBassHeading \DoubleBassNotes >>
     >>
