@@ -41,6 +41,7 @@ PianoHeading = {
       {
         \set PianoStaff.instrumentName = "Piano "
         \set PianoStaff.shortInstrumentName = " "
+        \set PianoStaff.midiInstrument = #"acoustic grand"
         <<
           \new Staff
           {
@@ -56,7 +57,7 @@ PianoHeading = {
     \layout {
       \context { \Staff \override TimeSignature.style = #'numbered }
     }
-    % \midi { }
+     \midi { }
   }
 }
 
@@ -77,6 +78,7 @@ PianoHeading = {
       {
         \set PianoStaff.instrumentName = "Piano "
         \set PianoStaff.shortInstrumentName = " "
+        \set PianoStaff.midiInstrument = #"acoustic grand"
         <<
           \new Staff
           {
@@ -92,7 +94,7 @@ PianoHeading = {
     \layout {
       \context { \Staff \override TimeSignature.style = #'numbered }
     }
-    % \midi { }
+     \midi { }
   }
 }
 
@@ -112,6 +114,7 @@ PianoHeading = {
       {
         \set PianoStaff.instrumentName = "Piano "
         \set PianoStaff.shortInstrumentName = " "
+        \set PianoStaff.midiInstrument = #"acoustic grand"
         <<
           \new Staff
           {
@@ -127,10 +130,9 @@ PianoHeading = {
     \layout {
       \context { \Staff \override TimeSignature.style = #'numbered }
     }
-    % \midi { }
+     \midi { }
   }
 }
-
 
 \paper {
   %two-sided = ##t
