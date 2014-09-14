@@ -23,25 +23,29 @@
     \override Score.Stem #'stemlet-length = #0.75
     \override Score.StaffSymbol.layer = #4
     \override Score.TimeSignature.layer = #3    
-    \new StaffGroup <<
+     \new StaffGroup <<
       \new Staff = "Violin I"
       {
         \set Staff.instrumentName = \markup \concat {"Violin I" " "}
+        \set Staff.midiInstrument = #"violin"
         << \Metrics \ViolinOneNotes >>
       }
       \new Staff = "Violin II"
       {
         \set Staff.instrumentName = \markup \concat {"Violin II" " "}
+        \set Staff.midiInstrument = #"violin"
         << \Metrics \ViolinTwoNotes  >>
       }
       \new Staff = "Viola"
       {
         \set Staff.instrumentName = \markup \concat {"Viola" " "}
+        \set Staff.midiInstrument = #"viola"
         << \Metrics \ViolaNotes  >>
       }
       \new Staff = "Cello"
       {
         \set Staff.instrumentName = \markup \concat {"Cello" " "}
+        \set Staff.midiInstrument = #"cello"
         << \Metrics \CelloNotes  >>
       }
     >>
