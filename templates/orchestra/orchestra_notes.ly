@@ -79,7 +79,7 @@ TromboneThreeNotes =  \relative c {
 
 TubaNotes =  \relative c {
   \clef "bass"
-  c1 | %1
+  c,1 | %1
 }
 
 TimpaniNotes =  \relative c {

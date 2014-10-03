@@ -122,17 +122,15 @@
         { \voiceOne << \Metrics \TrombonesHeading \TromboneOneNotes >> }
         { \voiceTwo << \Metrics \TrombonesHeading  \TromboneTwoNotes >> }
       >>
-      \new Staff = "bass trombone" \with {
+      \new Staff = "bass trombone and tuba" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
-        midiInstrument = #"trombone"
+	midiInstrument = #"tuba"
       }
-      << \Metrics \BassTromboneHeading \TromboneThreeNotes >>
-      \new Staff = "tuba" \with {
-        \override VerticalAxisGroup #'remove-empty = ##f
-        midiInstrument = #"tuba"
-      }
-      << \Metrics \TubaHeading \TubaNotes >>
+      <<
+      { \voiceOne << \Metrics \BtbnTubaHeading \TromboneThreeNotes >> }
+      { \voiceTwo << \Metrics \BtbnTubaHeading \TubaNotes >> }
     >>
+  >>
     \new StaffGroup <<
       \new Staff = "timpani" \with {
         \override VerticalAxisGroup #'remove-empty = ##f
