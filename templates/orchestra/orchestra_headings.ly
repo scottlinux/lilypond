@@ -72,7 +72,7 @@ BtbnTubaHeading = {
   #(set-accidental-style 'modern)
   \override Staff.Accidental #'hide-tied-accidental-after-break = ##t
   \set Staff.instrumentName = \markup { "BTbn | Tuba " }
-  \set Staff.shortInstrumentName = #"Btbn | Tba. "
+  \set Staff.shortInstrumentName = #"Tba. "
   \override Staff.InstrumentName #'self-alignment-X = #RIGHT
 }
 
